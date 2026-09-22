@@ -7,7 +7,9 @@ identification through wheelset displacement reconstruction.
 The framework reconstructs wheelset displacement through an intermediate
 vehicle dynamic response:
 
-\[ A_c `\rightarrow `{=tex}A_b `\rightarrow `{=tex}Z_w \]
+$$
+A_c \rightarrow A_b \rightarrow Z_w
+$$
 
 where:
 
@@ -102,7 +104,9 @@ PINN-La uses measured bogie acceleration as intermediate supervision.
 
 Loss:
 
-\[ L\_{La}=L\_{wheel}+`\lambda `{=tex}L\_{bogie}+`\mu `{=tex}L\_{reg} \]
+$$
+L_{La}=L_{wheel}+\lambda L_{bogie}+\mu L_{reg}
+$$
 
 Features:
 
@@ -119,7 +123,9 @@ two-stage architecture.
 
 Loss:
 
-\[ L\_{Lb}=L\_{wheel}+`\mu `{=tex}L\_{reg} \]
+$$
+L_{Lb}=L_{wheel}+\mu L_{reg}
+$$
 
 Features:
 
@@ -305,7 +311,9 @@ displacement states.
 
 For non-zero frequency components:
 
-\[ `\hat{v}`{=tex}\_k=`\frac{\hat{a}_k}{j\omega_k}`{=tex} \]
+$$
+\hat{v}_k=\frac{\hat{a}_k}{j\omega_k}
+$$
 
 The zero-frequency component is separately treated and set to zero
 before inverse Fourier transformation.
